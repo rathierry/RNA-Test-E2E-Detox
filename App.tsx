@@ -5,7 +5,9 @@ const App = () => {
   return (
     <View style={styles.container}>
       <StatusBar barStyle={'dark-content'} />
-      <Text style={styles.title}>E2E testing with detox on {Platform.OS}</Text>
+      <Text testID="title" style={styles.title}>
+        E2E testing with detox on {Platform.OS}
+      </Text>
     </View>
   );
 };
